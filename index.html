@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+<body>
+  <h1 id="title">
+  Mister D's Gym
+  </h1>
+  <p id="description">
+    Customer Survey
+  </p>
+  <form id="survey-form">
+    <fieldset>
+    <label id="name-label" placeholder="name">Full Name<input id="name" type="text" value="name" placeholder="name" required/>
+    </label>
+    <label id="email-label">Email<input id="email" type="email" value="email" placeholder="email" required/>
+    </label>
+    <label id="number-label" >Age<input id="number" type="number" value="number" min="18" max="150" placeholder="age" required/>
+    </label>
+    <label id="referrer"> How did you hear about us?
+      <select id="dropdown" name="referrer">
+        option value="">(select one)</option>
+              <option value="1">Website</option>
+              <option value="2">Friend</option>
+              <option value="3">Employee</option>
+              <option value="4">Other</option>
+      </select>
+    </label>
+  </fieldset>
+  <fieldset>
+  <p>What is your favorite type of exercise?</p>
+    <label for="weightlifting"><input id="weights" type="radio" value="weights" name="exercise-type" class="inline" /> Weightlifting
+    </label>
+    <label for="cardio"><input id="cardio" type="radio" value="cardio" name="exercise-type" class="inline" /> Cardio</label>
+    <label for="swimming"><input id="swimming" type="radio" value="swimming" name="exercise-type" class="inline" />Swimming</label>
+    <label for="sports"><input id="sports" type="radio" value="sports" name="exercise-type" class="inline" />Team Sports</label>
+    <label for="other"><input id="other" type="radio" value="other" name="exercise-type" class="inline" />Other</label>
+</fieldset>
+<fieldset>
+  <p>How often do you workout in a week?</p>
+    <input id="0-1" type="checkbox" name="days_a_week" value="0-1"> <label for="0-1">0-1 days</label>
+    <input id="2-3" type="checkbox" name="days_a_week" value="2-3"> <label for="2-3">2-3 days</label>
+    <input id="4-5" type="checkbox" name="days_a_week" value="2-3"> <label for="4-5">4-5 days</label>
+    <input id="6+" type="checkbox" name="days_a_week" value="6+"> <label for="6+">6+ days</label>
+</fieldset>
+  <label for="improvements">Are there any improvements we can do for the gym?
+  <textarea id="improvements" name="improvements" rows="3" cols="30" placeholder="Write here..."></textarea>
+  </label>
+  <input id ="submit" type="submit" value="submit" />
+    </form>
+  </body>
+</html>
